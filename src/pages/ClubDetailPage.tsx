@@ -10,7 +10,7 @@ export default function ClubDetailPage() {
       <main className="page">
         <section className="panel empty-card">
           <h1>未找到对应社团</h1>
-          <p>这个演示站使用本地静态数据，你可以回到社团广场重新浏览。</p>
+          <p>你可以回到社团广场重新看看其他社团。</p>
           <Link to="/clubs" className="primary-button">
             返回社团广场
           </Link>
@@ -42,13 +42,13 @@ export default function ClubDetailPage() {
       </section>
       <section className="detail-grid">
         <article className="panel">
-          <span className="eyebrow">适合谁</span>
-          <h2>推荐人群</h2>
+          <span className="eyebrow">适合的人</span>
+          <h2>这个社团更适合谁</h2>
           <p>{club.suitableFor}</p>
         </article>
         <article className="panel">
-          <span className="eyebrow">活动形式</span>
-          <h2>你加入后会经历什么</h2>
+          <span className="eyebrow">平时做什么</span>
+          <h2>加入后可以参加这些活动</h2>
           <ul className="detail-list">
             {club.activities.map((activity) => (
               <li key={activity}>{activity}</li>
@@ -56,13 +56,13 @@ export default function ClubDetailPage() {
           </ul>
         </article>
         <article className="panel">
-          <span className="eyebrow">节奏说明</span>
-          <h2>投入强度</h2>
+          <span className="eyebrow">参与节奏</span>
+          <h2>大概需要投入多少时间</h2>
           <p>{club.intensity === "high" ? "需要稳定训练或长期投入" : club.intensity === "medium" ? "保持规律参与即可" : "适合轻量参与"}</p>
         </article>
         <article className="panel">
-          <span className="eyebrow">招新安排</span>
-          <h2>报名须知</h2>
+          <span className="eyebrow">报名之前</span>
+          <h2>招新安排</h2>
           <p>{club.status === "open" ? "当前处于开放招新阶段，提交意向后可进入后续面试或试训安排。" : "当前已接近截止，建议尽快查看并提交报名意向。"}</p>
         </article>
       </section>

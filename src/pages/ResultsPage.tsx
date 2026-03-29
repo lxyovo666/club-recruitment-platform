@@ -26,10 +26,10 @@ export default function ResultsPage() {
         <section className="panel empty-card">
           <span className="eyebrow">还没有匹配结果</span>
           <h1>先完成测评，或者挑选一些标签再回来</h1>
-          <p>这个结果页会展示你的画像总结、Top 5 推荐社团以及每个推荐背后的解释。</p>
+          <p>做完之后，这里会帮你整理出值得优先看的社团。</p>
           <div className="hero-actions">
             <Link to="/quiz" className="primary-button">
-              去做 AI 测评
+              去做测评
             </Link>
             <Link to="/" className="secondary-button">
               返回首页选标签
@@ -47,24 +47,24 @@ export default function ResultsPage() {
       <PersonaSummary profile={profile} />
       <section className="panel report-panel">
         <div>
-          <span className="eyebrow">推荐逻辑</span>
-          <h2>系统会优先考虑你的兴趣标签、参与节奏和成长目标</h2>
+          <span className="eyebrow">可以先这样看</span>
+          <h2>先点前几个更适合你的社团，再决定要不要报名</h2>
         </div>
         <div className="report-points">
           <div>
             <strong>先看前 3 个</strong>
-            <p>这是当前与你匹配度最高、最值得优先点击的社团。</p>
+            <p>这几个和你的兴趣、参与方式会更贴近一些。</p>
           </div>
           <div>
             <strong>重点看推荐理由</strong>
-            <p>每张卡片都解释了推荐依据，不只是给一个分数。</p>
+            <p>每张卡片都会告诉你，为什么会推荐这个社团。</p>
           </div>
         </div>
       </section>
       <section className="results-header">
         <div>
           <span className="eyebrow">Top 5 推荐</span>
-          <h2>这些社团最值得你优先点进去看</h2>
+          <h2>这些社团你可以先点进去看看</h2>
         </div>
         <Link to="/clubs" className="secondary-button">
           继续浏览全部社团
