@@ -45,6 +45,22 @@ export default function ResultsPage() {
   return (
     <main className="page">
       <PersonaSummary profile={profile} />
+      <section className="panel report-panel">
+        <div>
+          <span className="eyebrow">推荐逻辑</span>
+          <h2>系统会优先考虑你的兴趣标签、参与节奏和成长目标</h2>
+        </div>
+        <div className="report-points">
+          <div>
+            <strong>先看前 3 个</strong>
+            <p>这是当前与你匹配度最高、最值得优先点击的社团。</p>
+          </div>
+          <div>
+            <strong>重点看推荐理由</strong>
+            <p>每张卡片都解释了推荐依据，不只是给一个分数。</p>
+          </div>
+        </div>
+      </section>
       <section className="results-header">
         <div>
           <span className="eyebrow">Top 5 推荐</span>

@@ -60,6 +60,11 @@ export default function ClubDetailPage() {
           <h2>投入强度</h2>
           <p>{club.intensity === "high" ? "需要稳定训练或长期投入" : club.intensity === "medium" ? "保持规律参与即可" : "适合轻量参与"}</p>
         </article>
+        <article className="panel">
+          <span className="eyebrow">招新安排</span>
+          <h2>报名须知</h2>
+          <p>{club.status === "open" ? "当前处于开放招新阶段，提交意向后可进入后续面试或试训安排。" : "当前已接近截止，建议尽快查看并提交报名意向。"}</p>
+        </article>
       </section>
     </main>
   );

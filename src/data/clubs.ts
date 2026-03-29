@@ -195,4 +195,4 @@ export const clubs: Club[] = [
   },
 ];
 
-export const featuredClubs = clubs.slice(0, 6);
+export const featuredClubs = clubs.slice(0, 4);
