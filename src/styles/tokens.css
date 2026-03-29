@@ -1,0 +1,23 @@
+:root {
+  --bg: #fff7ef;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #fffefa;
+  --text: #1d2736;
+  --muted: #5f6977;
+  --brand: #ff6b35;
+  --brand-strong: #d9480f;
+  --brand-soft: #ffe1d3;
+  --accent: #0f766e;
+  --line: rgba(29, 39, 54, 0.1);
+  --shadow: 0 30px 60px rgba(29, 39, 54, 0.08);
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --max-width: 1180px;
+  --club-tech: #ff7a45;
+  --club-arts: #ffb703;
+  --club-sports: #2a9d8f;
+  --club-media: #577590;
+  --club-public: #6a994e;
+  --club-social: #9b5de5;
+}
