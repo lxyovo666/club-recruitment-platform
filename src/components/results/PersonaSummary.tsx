@@ -8,7 +8,6 @@ interface PersonaSummaryProps {
 export default function PersonaSummary({ profile }: PersonaSummaryProps) {
   return (
     <section className="panel persona-panel">
-      <span className="eyebrow">AI 为你总结</span>
       <h1>你的社团画像已经生成</h1>
       <p>{summarizePersona(profile)}</p>
       <div className="mini-tags">

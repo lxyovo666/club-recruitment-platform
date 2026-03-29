@@ -23,7 +23,6 @@ export default function ClubDetailPage() {
     <main className="page">
       <section className="panel detail-hero" style={{ borderTopColor: club.color }}>
         <div>
-          <span className="eyebrow">社团详情</span>
           <h1>{club.name}</h1>
           <p>{club.summary}</p>
           <div className="mini-tags">
@@ -42,12 +41,10 @@ export default function ClubDetailPage() {
       </section>
       <section className="detail-grid">
         <article className="panel">
-          <span className="eyebrow">适合的人</span>
           <h2>这个社团更适合谁</h2>
           <p>{club.suitableFor}</p>
         </article>
         <article className="panel">
-          <span className="eyebrow">平时做什么</span>
           <h2>加入后可以参加这些活动</h2>
           <ul className="detail-list">
             {club.activities.map((activity) => (
@@ -56,12 +53,10 @@ export default function ClubDetailPage() {
           </ul>
         </article>
         <article className="panel">
-          <span className="eyebrow">参与节奏</span>
           <h2>大概需要投入多少时间</h2>
           <p>{club.intensity === "high" ? "需要稳定训练或长期投入" : club.intensity === "medium" ? "保持规律参与即可" : "适合轻量参与"}</p>
         </article>
         <article className="panel">
-          <span className="eyebrow">报名之前</span>
           <h2>招新安排</h2>
           <p>{club.status === "open" ? "当前处于开放招新阶段，提交意向后可进入后续面试或试训安排。" : "当前已接近截止，建议尽快查看并提交报名意向。"}</p>
         </article>

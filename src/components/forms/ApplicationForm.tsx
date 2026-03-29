@@ -26,7 +26,6 @@ export default function ApplicationForm({ clubName, onSubmit }: ApplicationFormP
       }}
     >
       <div className="section-heading">
-        <span className="eyebrow">报名页面</span>
         <h1>提交你的 {clubName} 报名意向</h1>
         <p>演示版不会真的发送到后台，但会完整模拟报名闭环。</p>
       </div>

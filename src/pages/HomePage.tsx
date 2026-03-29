@@ -15,7 +15,6 @@ export default function HomePage() {
     <main className="page home-page">
       <section className="hero hero-refined">
         <div className="hero-copy">
-          <span className="eyebrow">社团招新</span>
           <h1>找社团，不用一个个翻</h1>
           <p>先看看哪些社团更适合你，或者直接去逛一逛正在招新的社团。</p>
           <div className="hero-actions">
@@ -27,27 +26,10 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="hero-visual hero-panel">
-          <div className="flow-card">
-            <span className="eyebrow">开始之前</span>
-            <ol className="flow-list">
-              <li>做个简单匹配，看看推荐结果</li>
-              <li>或者直接浏览你感兴趣的社团</li>
-              <li>点进详情页看看活动和招新要求</li>
-              <li>找到喜欢的就直接报名</li>
-            </ol>
-          </div>
-          <div className="floating-card subtle">
-            <p>当前可看</p>
-            <strong>12 个社团</strong>
-            <span>可以直接浏览、筛选，也可以先做匹配再看</span>
-          </div>
-        </div>
       </section>
 
       <section className="path-grid">
         <article className="panel path-card">
-          <span className="eyebrow">不知道怎么选</span>
           <h2>不知道该选哪个社团</h2>
           <p>回答几道简单问题，我们会先帮你缩小范围。</p>
           <Link to="/quiz" className="primary-button">
@@ -55,7 +37,6 @@ export default function HomePage() {
           </Link>
         </article>
         <article className="panel path-card">
-          <span className="eyebrow">已经有方向</span>
           <h2>已经有兴趣方向</h2>
           <p>直接按分类、关键词和标签筛你想看的社团。</p>
           <Link to="/clubs" className="secondary-button">
@@ -67,7 +48,6 @@ export default function HomePage() {
       <QuickTags selectedTags={selectedTags} onToggle={toggleTag} />
       <section className="entry-strip compact-strip">
         <div>
-          <span className="eyebrow">按兴趣找</span>
           <h2>已经知道自己喜欢什么，就直接选标签看看</h2>
         </div>
         <button type="button" className="primary-button" onClick={() => navigate("/results", { state: { selectedTags } })} disabled={selectedTags.length === 0}>

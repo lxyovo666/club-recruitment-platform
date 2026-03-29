@@ -13,9 +13,7 @@ export default function QuizQuestion({ question, index, total, selectedValue, on
   return (
     <section className="quiz-shell">
       <div className="section-heading">
-        <span className="eyebrow">
-          第 {index + 1} 题 / 共 {total} 题
-        </span>
+        <p className="progress-copy">第 {index + 1} 题 / 共 {total} 题</p>
         <h1>{question.title}</h1>
         <p>{question.helper}</p>
       </div>

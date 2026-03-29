@@ -30,7 +30,6 @@ export default function ClubFilters({
   return (
     <section className="panel">
       <div className="section-heading">
-        <span className="eyebrow">社团广场</span>
         <h1>直接浏览，也能快速找到方向</h1>
         <p>支持关键词、分类和标签筛选，适合已经有明确兴趣的新生。</p>
       </div>
