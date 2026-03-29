@@ -5,7 +5,7 @@ export default function ClubHighlightGrid() {
   return (
     <section className="panel">
       <div className="section-heading">
-        <h2>先看看正在招新的校园热门选择</h2>
+        <h2>看看正在招新的校园热门选择</h2>
       </div>
       <div className="card-grid">
         {featuredClubs.map((club) => (
