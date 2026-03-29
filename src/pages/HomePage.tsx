@@ -13,21 +13,6 @@ export default function HomePage() {
 
   return (
     <main className="page home-page">
-      <section className="hero hero-refined">
-        <div className="hero-copy">
-          <h1>找社团，不用一个个翻</h1>
-          <p>先看看哪些社团更适合你，或者直接去逛一逛正在招新的社团。</p>
-          <div className="hero-actions">
-            <Link to="/quiz" className="primary-button">
-              看看适合我的社团
-            </Link>
-            <Link to="/clubs" className="secondary-button">
-              先逛逛社团
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="path-grid">
         <article className="panel path-card">
           <h2>不知道该选哪个社团</h2>
